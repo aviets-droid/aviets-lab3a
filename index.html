@@ -4,25 +4,12 @@
     <title>PBX</title>
     <link rel="stylesheet" href="style.css">
     <script src='script.js'> </script>
-	<script>
-	const Pads = "1,ABC2,DEF3,GHI4,JKL5,MNO6,PQRS7,TUV8,WXYZ9,*,0,#"
-	var rc = -1, pads = Pads.split(","); console.log(pads.length)
-	document.writeln("<p><table>");
-	for (var row=1; row<=4; row++) {
-	  document.write("<tr>")
-	  for (var col=1; col<=3; col++) {
-	    rc += 1;
-	    document.write("<td><button class='key'>"+pads[rc].slice(-1)+"</button>");
-	    }
-	}
-	document.writeln("</table>");
-	</script>
   </head>
   <body>
 	<p>PBX Emulator </p>
  	<input type=text id=txt value="">
 	<input type=button id=btn value="Dial" onClick="toggleBtn()"> 
-  <!-- <script>
+  <script>
 	const Pads = "1,ABC2,DEF3,GHI4,JKL5,MNO6,PQRS7,TUV8,WXYZ9,*,0,#"
 	var rc = -1, pads = Pads.split(","); console.log(pads.length)
 	document.writeln("<p><table>");
@@ -34,7 +21,7 @@
 	    }
 	}
 	document.writeln("</table>");
-  </script> -->
+  </script>
   </body>
 </html>
 
